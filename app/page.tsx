@@ -1,27 +1,29 @@
-import {
-	Navbar,
-	Hero,
-	Footer,
-	About,
-	WorkExperience,
-	Education,
-	TechStack,
-	Projects,
-	Contact,
-} from "@/components";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Education from "@/components/Education";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
+import TechStack from "@/components/TechStack";
+import WorkExperience from "@/components/WorkExperience";
 
-export default function Home() {
+const Page = () => {
 	return (
-		<main className="flex flex-col font-mono w-full max-w-7xl bg-zinc-50 dark:bg-zinc-950 sm:items-start">
+		<div className="bg-white dark:bg-zinc-950 justify-center items-center">
 			<Navbar />
-			<Hero />
-			<About />
-			<WorkExperience />
-			<Education />
-			<TechStack />
-			<Contact />
-			<Projects />
+			<main className="flex flex-col font-mono w-full max-w-7xl sm:items-start">
+				<Hero />
+				<About />
+				<WorkExperience />
+				<Education />
+				<TechStack />
+				<Contact />
+				<Projects />
+			</main>
 			<Footer />
-		</main>
+		</div>
 	);
-}
+};
+
+export default Page;

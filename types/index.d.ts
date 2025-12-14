@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface NAVLINKPROPS {
 	id: string;
 	name: string;
@@ -57,4 +59,24 @@ export interface EDUCATIONPROPS {
 	fromYear: string;
 	toYear: string;
 	location: string;
+}
+
+export interface TAGSPROPS {
+	title: string;
+	iconImg?: string | StaticImport;
+	tagStyles?: string;
+}
+
+export interface SOCIALMEDIAPROPS {
+	title: string;
+	socialLink: string;
+	iconImg?: string | StaticImport | StaticImageData;
+	iconImgDark?: string | StaticImport | StaticImageData;
+	iconImgLight?: string | StaticImport | StaticImageData;
+}
+
+export interface SOCIALTAGPROPS {
+	title: string;
+	socialLinkUrl: string;
+	iconUrl: string;
 }

@@ -5,6 +5,7 @@ import {
 	PROJECTPROPS,
 	SCREENPOSITIONPROPS,
 	SCREENSIZEPROPS,
+	SOCIALMEDIAPROPS,
 	WORKEXPERIENCEPROPS,
 } from "@/types";
 
@@ -34,6 +35,11 @@ export const navLinks: NAVLINKPROPS[] = [
 		id: "05",
 		name: "Projects",
 		href: "#projects",
+	},
+	{
+		id: "06",
+		name: "Contact",
+		href: "#contact",
 	},
 ];
 
@@ -270,5 +276,37 @@ export const myCertificates: CERTIFICATEPROPS[] = [
 		platform: "Udemy",
 		certificateImg: "",
 		certificateUrl: "",
+	},
+];
+
+export const socialMediaLinks: SOCIALMEDIAPROPS[] = [
+	{
+		title: "GitHub",
+		socialLink: "https://github.com/nihalsheikh",
+		iconImgDark: "/assets/tools/GitHub_light.svg",
+		iconImgLight: "/assets/tools/GitHub_dark.svg",
+	},
+	{
+		title: "Twitter",
+		socialLink: "https://x.com/sshNihal",
+		iconImg: "/assets/social/twitter_old.svg",
+		iconImgDark: "/assets/social/twitter-light.svg",
+		iconImgLight: "/assets/social/twitter-dark.svg",
+	},
+	{
+		title: "LinkedIn",
+		socialLink: "https://www.linkedin.com/in/nihalsheikh/",
+		iconImg: "/assets/social/linkedin.svg",
+	},
+	{
+		title: "Peerlist",
+		socialLink: "https://peerlist.io/nihalsheikh",
+		iconImg: "/assets/social/peerlist.svg",
+	},
+	{
+		title: "LeetCode",
+		socialLink: "https://leetcode.com/u/nihalsheikh/",
+		iconImg: "/assets/social/leetcode-original.svg",
+		iconImgLight: "/assets/social/leetcode.svg",
 	},
 ];

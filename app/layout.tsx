@@ -1,27 +1,26 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const jetbrainsMono = JetBrains_Mono({
-	variable: "--font-jetbrains-mono",
-	subsets: ["latin"],
+const ibmPlexMono = IBM_Plex_Mono({
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-	title: "Nihal's Portfolio",
-	description: "A website about myself and showcasing projects",
+  title: "Nihal's Portfolio",
+  description: "A website about myself and showcasing projects",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={`${jetbrainsMono.variable} antialiased`}>
-				{children}
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={`${ibmPlexMono.variable} antialiased`}>{children}</body>
+    </html>
+  );
 }

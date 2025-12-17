@@ -1,8 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface NAVLINKPROPS {
-	id: string;
-	name: string;
+	title: string;
 	href: string;
 }
 

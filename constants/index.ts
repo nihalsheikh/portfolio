@@ -12,34 +12,24 @@ import {
 // Navabr links
 export const navLinks: NAVLINKPROPS[] = [
 	{
-		id: "01",
-		name: "Home",
+		title: "Home",
 		href: "#home",
 	},
 	{
-		id: "02",
-		name: "About",
+		title: "About",
 		href: "#about",
 	},
 	{
-		id: "03",
-		name: "Work",
+		title: "Work",
 		href: "#work",
 	},
 	{
-		id: "04",
-		name: "Techstack",
+		title: "Techstack",
 		href: "#techstack",
 	},
 	{
-		id: "05",
-		name: "Projects",
+		title: "Projects",
 		href: "#projects",
-	},
-	{
-		id: "06",
-		name: "Contact",
-		href: "#contact",
 	},
 ];
 

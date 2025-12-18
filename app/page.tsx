@@ -18,7 +18,7 @@ export default function Home() {
 		<div
 			className={`${
 				theme === "dark"
-					? "bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-black"
+					? "bg-gradient-to-b from-zinc-950 via-zinc-800 to-zinc-700"
 					: "[background:radial-gradient(125%_100%_at_50%_0%,#fff_6.32%,#e0f0ff_29.28%,#e7effd_68.68%,#fff_100%)]"
 			} flex flex-col items-center h-screen relative`}
 		>
